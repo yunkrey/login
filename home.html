@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <!-- Inclui o arquivo de estilos para a página home -->
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Inclui os ícones Bootstrap usando um CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navegação lateral (menu) -->
+    <nav class="menu-lateral">
+        <!-- Botão de expansão do menu -->
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+    
+        <!-- Lista de itens do menu -->
+        <ul>
+            <!-- Item de menu ativo: Home -->
+            <li class="item-menu ativo">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <!-- Outros itens do menu -->
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                    <span class="txt-link">Dashboard</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-calendar3"></i></span>
+                    <span class="txt-link">Agenda</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-wechat"></i></span>
+                    <span class="txt-link">Dúvidas</span>
+                </a>
+            </li>
+         </ul>
+    </nav>
+    
+    <!-- Inclui o arquivo de script para interação com o menu -->
+    <script src="menu.js"></script>
+</body>
+</html>

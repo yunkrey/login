@@ -7,25 +7,53 @@
     <title>login</title>
 </head>
 <body>
+    <!-- Div que contém a estrutura da página -->
     <div class="main-login">
         <div class="left-login">
+            <!-- Título e imagem do lado esquerdo -->
             <h1>Faça login<br>Seja bem-vindo(a) ao odonto web</h1> 
             <img src="Oral care-pana.svg" class="left-login-image"  alt="dent">
         </div>
         <div class="right-login"> 
+            <!-- Div do formulário de login -->
             <div class="card-login">
+                <!-- Título do formulário -->
                 <h1>Login</h1>
                 <div class="textfield">
+                    <!-- Campo de entrada para o nome de usuário -->
                     <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+                    <input type="text" id="username" name="usuario" placeholder="Usuário">
                 </div>
                 <div class="textfield">
+                    <!-- Campo de entrada para a senha -->
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" id="password" name="senha" placeholder="Senha">
                 </div>
-                <button class="btn-login">Login</button>
+                <!-- Botão de login -->
+                <button id="loginButton" class="btn-login">Login</button>
             </div>
         </div>
     </div>
+
+    <script>
+      // Capturando o botão de login por seu ID
+      const loginButton = document.getElementById("loginButton");
+
+      // Adicionando um evento de clique ao botão
+      loginButton.addEventListener("click", () => {
+        // Capturando os valores do campo de usuário e senha
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Verificando se ambos os campos estão preenchidos
+        if (username && password) {
+          // Redirecionando para a página de home
+          window.location.href = "home.html";
+        } else {
+          // Exibindo um alerta se algum campo estiver vazio
+          alert("Preencha ambos os campos. Tente novamente.");
+        }
+      });
+    </script>
 </body>
 </html>

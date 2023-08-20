@@ -1,15 +1,17 @@
+/* Importa a fonte do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,100&display=swap');
 
-
+/* Define estilos gerais */
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
 }
 
 body * {
-
     box-sizing: border-box;
 }
+
+/* Estilos para a seção de login */
 .main-login {
     width: 100vw;
     height: 100vh;
@@ -19,6 +21,7 @@ body * {
     align-items: center;
 }
 
+/* Estilos para a coluna esquerda (imagem e texto) */
 .left-login {
     width: 50vw;
     height: 100vh;
@@ -36,9 +39,8 @@ body * {
 .left-login-image{
     width: 35vw;
 }
-  
- 
 
+/* Estilos para a coluna direita (formulario) */
 .right-login {
     width: 50vw;
     height: 100vh;
@@ -47,6 +49,7 @@ body * {
     align-items: center;
 }
 
+/* Estilos para o card de login */
 .card-login {
     width: 60%;
     display: flex;
@@ -65,53 +68,55 @@ body * {
     margin: 0;
 }
 
+/* Estilos para os campos de entrada */
 .textfield {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px 0px;
-    }
-
-.textfield > input{
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-   padding: 15px;
-   background-color: #514869;
-   color: #f0ffffde;
-   font-size: 12pt;
-   box-shadow: #00000056;
-   outline: none;
-   box-sizing: border-box;
 }
 
-.textfield > label{
- color: #f0ffffde;
- margin-bottom: 10px;
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: #00000056;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.textfield > input::placeholder{
-  color: #f0ffff94;
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
 }
 
-.btn-login{
-  width: 100%;
-  padding: 16px 0px;
-  margin: 25px;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: #2b134b;
-  background: #00ff88;
-  cursor: pointer;
-  box-shadow: 0px 10px 40px -12px #00ff8052;
-
+.textfield > input::placeholder {
+    color: #f0ffff94;
 }
 
+/* Estilos para o botão de login */
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+/* Estilos responsivos */
 @media only screen and (max-width: 950px) {
     .card-login {
         width: 85%;
@@ -119,28 +124,30 @@ body * {
 }
 
 @media only screen and (max-width: 600px){
+    .main-login {
+        flex-direction: column;
+    }
 
-.main-login{
-    flex-direction: column;
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+    }
 }
 
-.left-login > h1{
-    display: none;
-}
-
-.left-login{
-    width: 100%;
-    height: auto;
-}
-.right-login{
-    width: 100%;
-    height: auto;
-}
-.left-login-image{
-    width: 50vw;
-}
-
-.card-login{
-    width: 90%;
-}
-}

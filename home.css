@@ -1,0 +1,93 @@
+/* Importar as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Noto+Sans:ital,wght@0,400;1,100&display=swap');
+
+/* Aplicar estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Estilos para o menu lateral */
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 0%;
+    box-shadow: 3px 0 0 #00ff88;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* Estilos quando o menu lateral está expandido */
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+/* Estilos para o botão de expansão do menu */
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para a lista de itens do menu */
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+/* Estilos para o item do menu ativo */
+ul li.ativo {
+    background-color: #00ff88;
+}
+
+ul li.item-menu a:hover {
+    background: #00ff88;
+}
+
+/* Estilos para os links de itens do menu */
+ul li.item-menu a {
+    color: white;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+/* Estilos para o texto do link do item do menu */
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+/* Estilos para o texto do link quando o menu está expandido */
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px; 
+    opacity: 1;
+}
+
+/* Estilos para os ícones dos itens do menu */
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}
