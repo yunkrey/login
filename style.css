@@ -37,9 +37,18 @@ body * {
 }
 
 .left-login-image{
-    width: 35vw;
+   width: 15vw;
+   
 }
 
+
+.left-login-image1{
+    width: 15vw;
+}
+.left-login-image2{
+    width: 15vw;
+   
+}
 /* Estilos para a coluna direita (formulario) */
 .right-login {
     width: 50vw;
@@ -143,11 +152,17 @@ body * {
     }
 
     .left-login-image {
-        width: 50vw;
+        width: 30vw;
     }
 
     .card-login {
         width: 90%;
+    }
+    .left-login-image1{
+        width: 30vw;
+    }
+    .left-login-image2{
+        width: 30vw;
     }
 }
 
