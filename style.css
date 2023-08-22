@@ -4,6 +4,7 @@
 /* Define estilos gerais */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -29,11 +30,16 @@ body * {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
-.left-login > h1 {
+.left-login h1 {
     color: #77ffc0;
     font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    padding: 40px;
 }
 
 .left-login-image{
@@ -47,6 +53,7 @@ body * {
 
 .left-login-image2{
     width: 15vw;
+    margin-left: 40px;
 }
 /* Estilos para a coluna direita (formulario) */
 .right-login {
