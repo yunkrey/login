@@ -35,25 +35,29 @@ body * {
 
 .left-login h1 {
     color: #77ffc0;
+    filter: drop-shadow(5px 5px 10px #77ffc0);
     font-size: 3vw;
     margin: 0;
     padding: 0;
     line-height: 0;
-    padding: 40px;
+    padding: 20px;
 }
 
 .left-login-image{
    width: 15vw;
+   filter: drop-shadow(5px 5px 10px #77ffc0);
    
 }
 
 .left-login-image1{
     width: 15vw;
+    filter: drop-shadow(5px 5px 10px #77ffc0);
 }
 
 .left-login-image2{
     width: 15vw;
-    margin-left: 40px;
+    margin-left: 200px;
+    filter: drop-shadow(5px 5px 10px #77ffc0);
 }
 /* Estilos para a coluna direita (formulario) */
 .right-login {
@@ -171,6 +175,8 @@ body * {
     }
     .left-login-image2{
         width: 30vw;
+        margin-left: 100px;
+        filter: drop-shadow(5px 5px 10px #77ffc0);
     }
 }
 
