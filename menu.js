@@ -26,4 +26,6 @@ var menuside = document.querySelector('.menu-lateral');
 btnexp.addEventListener('click', function(){
    // Alterna a classe 'expandir' no menu lateral (para expandir/retrair)
    menuside.classList.toggle('expandir');
+   var header = document.querySelector("header");
+   header.style.width = "82.43%";
 });

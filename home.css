@@ -20,11 +20,12 @@ nav.menu-lateral {
     background-color: #202020;
     padding: 40px 0 40px 0%;
     box-shadow: 3px 0 0 #00ff88;
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
     overflow: hidden;
     transition: .5s;
+    float: left;
 }
 
 /* Estilos quando o menu lateral está expandido */
@@ -35,7 +36,7 @@ nav.menu-lateral.expandir {
 /* Estilos para o botão de expansão do menu */
 .btn-expandir {
     width: 100%;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .btn-expandir > i {
@@ -90,4 +91,19 @@ nav.menu-lateral.expandir .txt-link {
 ul li.item-menu a .icon > i {
     font-size: 30px;
     margin-left: 10px;
+}
+
+header{
+    width: calc(100% - 60px);
+    float: left;
+    padding: 10px;
+    background-color: #202020;
+    border-bottom: 2px solid #00ff88;
+    border-left: 2px solid #00ff88;
+    color: #00ff88;
+    text-align: center;
+}
+
+.clear{
+    clear: both;
 }
