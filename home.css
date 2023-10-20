@@ -30,7 +30,7 @@ nav.menu-lateral {
 
 /* Estilos quando o menu lateral está expandido */
 nav.menu-lateral.expandir {
-    width: 300px;
+    width: 80%;
 }
 
 /* Estilos para o botão de expansão do menu */
