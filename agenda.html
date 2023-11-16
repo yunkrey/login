@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
+    <title>Homepage</title>
+    
     <!-- Inclui o arquivo de estilos para a página home -->
     <link rel="stylesheet" href="home.css">
 
@@ -21,7 +22,7 @@
         <!-- Lista de itens do menu -->
         <ul>
             <!-- Item de menu ativo: Home -->
-            <li class="item-menu ">
+            <li class="item-menu">
                 <a href="home.html">
                     <span class="icon"><i class="bi bi-house"></i></span>
                     <span class="txt-link">Home</span>
@@ -29,17 +30,15 @@
             </li>
             <!-- Outros itens do menu -->
             <li class="item-menu">
-                <a href="dash.html">
-                    <span class="icon"><i class="bi bi-columns-gap"></i></span>
-                    <span class="txt-link">Dashboard</span>
+                <a href="fixa.html">
+                    <span class="icon"><i class="bi bi-file-medical"></i></span>
+                    <span class="txt-link">Ficha</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a href="agenda.html">
                     <span class="icon"><i class="bi bi-calendar3"></i></span>
                     <span class="txt-link">Agenda</span>
-                    
-                    
                 </a>
             </li>
             <li class="item-menu">
@@ -54,13 +53,26 @@
                     <span class="txt-link">Avisos</span>
                 </a>
             </li>
-         </ul>
+        </ul>
     </nav>
-    <header><h1>AGENDA</h1></header>
 
-    <!-- Sempre por ultimo -->
-    <div class="clear"></div>
+    <header>
+        <h1>AGENDA</h1>
+    </header>
+
+  
+    
+    
+
     <!-- Inclui o arquivo de script para interação com o menu -->
     <script src="menu.js"></script>
+
+    <script>
+        // Adicione um evento de clique ao botão
+        document.getElementById("botao").addEventListener("click", function() {
+            // Redirecione o usuário para a "sintomas.html" quando o botão for clicado
+            window.location.href = "sintomas.html";
+        });
+    </script>
 </body>
 </html>

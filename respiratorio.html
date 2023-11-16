@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/formulario.css" media="screen">
+    <title>Ficha</title>
+</head>
+<body>
+    <h2 class="title">Sistema Respiratório:</h2>
+
+        <fieldset>
+            <div class="Respiratório">
+                <label>Tosse muito?
+                    <div class="sim">
+                        <input type="radio" name="Respiratório" value="sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Respiratório" value="não">Não
+                    </div>
+                </label>
+            
+                <label>Fuma?
+                    <div class="sim">
+                        <input type="radio" name="Respiratório" value="sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Respiratório" value="não">Não
+                    </div>
+                    <br>
+                    Se sim, há quanto tempo?<br><input type="text" name="Respiratório" id="Respiratório">
+                </label>
+            
+                <label>Tem asma?
+                    <div class="sim">
+                        <input type="radio" name="Respiratório" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Respiratório" value="Não">Não
+                    </div>
+                </label>
+            </div>
+        </fieldset>
+
+        <h2 class="title">Sistema Hematológico:</h2>
+
+        <fieldset>
+            <div class="Hematológico">
+                <label>Sangra muito quando se corta?
+                    <div class="sim">
+                        <input type="radio" name="Hematológico" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Hematológico" value="Não">Não
+                    </div>
+                </label>
+                <label>Tem com frequencia algum tipo de hemorragia?
+                    <div class="sim">
+                        <input type="radio" name="Hematológico" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Hematológico" value="Não">Não
+                    </div>
+                </label>
+                <label>Possui anemia?
+                    <div class="sim">
+                        <input type="radio" name="Hematológico" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Hematológico" value="Não">Não
+                    </div>
+                </label>
+            </div>
+        </fieldset>
+        <button type="button" id="botao">Enviar</button>
+            
+            <script>
+             // Adicione um evento de clique ao botão
+             document.getElementById("botao").addEventListener("click", function() {
+             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
+                window.location.href = "endocrino.html";
+                });
+            </script>
+</body>
+</html>

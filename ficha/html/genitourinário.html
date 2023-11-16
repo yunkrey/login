@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/formulario.css" media="screen">
+    <title>Ficha</title>
+</head>
+<body>
+    <h2>Sistema Genitourinário</h2>
+
+        <fieldset>
+            <div class="Genitourinário">
+                <label>Tem problemas de dores constantes nos rins?
+                    <div class="sim">
+                        <input type="radio" name="Genitourinário" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Genitourinário" value="Não">Não
+                    </div>
+                </label>
+                <label>Tem dores e/ou sangramentos ao urinas?
+                    <div class="sim">
+                        <input type="radio" name="Genitourinário" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Genitourinário" value="Não">Não
+                    </div>
+                </label>
+                <label>Levanta-se muito a noite para urinar?
+                    <div class="sim">
+                        <input type="radio" name="Genitourinário" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Genitourinário" value="Não">Não
+                    </div>
+                </label>
+            </div>
+        </fieldset>
+
+        <h2 class="title">Sistema Digestivo</h2>
+
+        <fieldset>
+            <div class="Digestivo">
+                <label>Tem mau Hálito?
+                    <div class="sim">
+                        <input type="radio" name="Digestivo" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Digestivo" value="Não">Não
+                    </div>
+                </label>
+                <label>Tem dor de estômago frequentemente?
+                    <div class="sim">
+                        <input type="radio" name="Digestivo" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Digestivo" value="Não">Não
+                    </div>
+                </label>
+                <label>Já ficou com pele e olhos amarelados?
+                    <div class="sim">
+                        <input type="radio" name="Digestivo" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Digestivo" value="Não">Não
+                    </div>
+                </label>
+                <label>Tem algum problema no fígado?
+                    <div class="sim">
+                        <input type="radio" name="Digestivo" value="Sim">Sim
+                    </div>
+                    <div class="não">
+                        <input type="radio" name="Digestivo" value="Não">Não
+                    </div>
+                </label>
+            </div>
+        </fieldset>
+        <button type="button" id="botao">Enviar</button>
+            
+            <script>
+             // Adicione um evento de clique ao botão
+             document.getElementById("botao").addEventListener("click", function() {
+             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
+                window.location.href = "osteoarticular.html";
+                });
+            </script>
+</body>
+</html>

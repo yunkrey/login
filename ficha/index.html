@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sytle.css">
+    <title>Ficha Odontológica do Paciente</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1>Ficha Odontológica do Paciente</h1>
+            
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="input-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="input-group">
+                <label for="telefone">Número de Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+
+            <div class="input-group">
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="indefinido">Indefinido</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg">
+            </div>
+
+            <div class="input-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+
+            <div class="input-group">
+                <label for="profissao">Profissão:</label>
+                <input type="text" id="profissao" name="profissao">
+            </div>
+
+            <div class="input-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+
+            <div class="input-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+
+            <div class="input-group">
+                <label for="estadoCivil">Estado Civil:</label>
+                <input type="text" id="estadoCivil" name="estadoCivil">
+            </div>
+
+            <div class="input-group">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes"></textarea>
+            </div>
+        
+            
+            <button type="button" id="botao">Enviar</button>
+            
+            <script>
+             // Adicione um evento de clique ao botão
+             document.getElementById("botao").addEventListener("click", function() {
+             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
+                window.location.href = "html/ficha.html";
+                });
+            </script>
+            
+
+        </form>
+    </div>
+</body>
+</html>

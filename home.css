@@ -17,12 +17,12 @@ body {
 nav.menu-lateral {
     width: 60px;
     height: 100%;
-    background-color: #202020;
+    background-color: #437b58;
     padding: 40px 0 40px 0%;
     box-shadow: 3px 0 0 #00ff88;
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
+    position: fixed;
+    top: 7.45vh;
+    left: 0;
     overflow: hidden;
     transition: .5s;
     float: left;
@@ -30,7 +30,7 @@ nav.menu-lateral {
 
 /* Estilos quando o menu lateral está expandido */
 nav.menu-lateral.expandir {
-    width: 80%;
+    width: 15%;
 }
 
 /* Estilos para o botão de expansão do menu */
@@ -57,11 +57,13 @@ ul li.item-menu {
 
 /* Estilos para o item do menu ativo */
 ul li.ativo {
-    background-color: #00ff88;
+    background-color: #ef894a;
+    color: orange;
 }
 
 ul li.item-menu a:hover {
-    background: #00ff88;
+    background: #ef894a;
+    
 }
 
 /* Estilos para os links de itens do menu */
@@ -83,7 +85,7 @@ ul li.item-menu a .txt-link {
 
 /* Estilos para o texto do link quando o menu está expandido */
 nav.menu-lateral.expandir .txt-link {
-    margin-left: 40px; 
+    margin-left: 40px;
     opacity: 1;
 }
 
@@ -93,17 +95,28 @@ ul li.item-menu a .icon > i {
     margin-left: 10px;
 }
 
-header{
-    width: calc(100% - 60px);
+header {
+    width: calc(103.20% - 60px);
     float: left;
-    padding: 10px;
-    background-color: #202020;
+    padding: 15px;
+    background-color: #2f5d43;
     border-bottom: 2px solid #00ff88;
-    border-left: 2px solid #00ff88;
-    color: #00ff88;
+    color: white;
     text-align: center;
+
+    /* Adicione as seguintes regras para centralizar o header */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .clear{
     clear: both;
+}
+.img-home {
+    width: 205vh; /* 95% da largura da viewport */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho original */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-height: 100%; /* Define a altura máxima como 100% da altura da viewport */
 }

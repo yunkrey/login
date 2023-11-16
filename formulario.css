@@ -1,0 +1,76 @@
+/* Define o estilo básico para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o contêiner principal com limite máximo de largura */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para cabeçalho de nível 1 (H1) */
+.principal {
+    font-size: 30px;
+    color: #437b58;
+}
+
+p {
+    font-size: 17px;
+    color: #ef894a;
+}
+
+/* Estilo para cabeçalho de nível 2 (H2) */
+h2 {
+    font-size: 18px;
+}
+
+
+/* Estilo para os campos do formulário dentro de um campo de conjunto (fieldset) */
+fieldset {
+    background-color: #c5c5c5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo para rótulos (labels) */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo para campos de entrada de texto, números, e-mail e data */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+    background-color: #ffffff;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para botões */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo de realce do botão ao passar o mouse sobre ele */
+button:hover {
+    background-color: #0056b3;
+}

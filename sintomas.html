@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sintomas.css" media="screen">
+    <title>Ficha</title>
+</head>
+<body>
+    <h1 class="title">Síntomas presentes no Paciente</h1>
+    <br>
+
+    <fieldset>
+        <h2 class="title">Sinais Vitais</h2>
+            <div>
+             <label>P.A</label>
+                <input type="number" name="P.A" id="P.A">
+                <input type="date" name="PAdata" id="PAdata">
+                <input type="number" name="P.A" id="P.A">
+                <input type="date" name="PAdata" id="PAdata">
+                <input type="number" name="P.A" id="P.A">
+                <input type="date" name="PAdata" id="PAdata">
+                <br>
+                <label>BPM</label>
+                <input type="number" name="BPM" id="BPM">
+                <input type="number" name="BPM" id="BPM">
+                <input type="number" name="BPM" id="BPM">
+                <input type="number" name="BPM" id="BPM">
+                <input type="number" name="BPM" id="BPM">
+                <input type="number" name="BPM" id="BPM">
+                <br>
+                <label>Sp02</label>
+                <input type="number" name="Sp02" id="Sp02">
+                <input type="number" name="Sp02" id="Sp02">
+                <input type="number" name="Sp02" id="Sp02">
+                <input type="number" name="Sp02" id="Sp02">
+                <input type="number" name="Sp02" id="Sp02">
+                <input type="number" name="Sp02" id="Sp02">
+                <br>
+                <label>Glicemia</label>
+                <input type="number" name="Glicemia" id="Glicemia">
+                <input type="number" name="Glicemia" id="Glicemia">
+                <input type="number" name="Glicemia" id="Glicemia">
+                <input type="number" name="Glicemia" id="Glicemia">
+                <input type="number" name="Glicemia" id="Glicemia">
+                <input type="number" name="Glicemia" id="Glicemia">
+                <br>
+            </div>
+            <br>
+            <div>
+                <label>Tipo Sanguíneo:</label>
+                <input type="text" name="Sangue" id="Sangue">
+                <label>Fator RH:</label>
+                <input type="text" name="RH" id="RH">
+                <br>
+            </div>
+        </fieldset>
+        <button type="button" id="botao">Enviar</button>
+            
+            <script>
+             // Adicione um evento de clique ao botão
+             document.getElementById("botao").addEventListener("click", function() {
+             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
+                window.location.href = "cardiovascular.html";
+                });
+            </script>
+    
+</body>
+</html>

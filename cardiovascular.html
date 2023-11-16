@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cardio.css" media="screen">
+    <title>Ficha</title>
+</head>
+<body>
+    <h2 class="title">Sistema Cadiovascular:</h2>
+        <h3 class="title">Responda "Sim" ou "Não" com base no que você sente</h3>
+
+        <fieldset>
+            <div class="cardiaco">
+                <label>Já foi previnido por algum médico que possui no coração?</label>
+                <div class="sim">
+                    <label>
+                        <input type="radio" name="cardiaco1" value="sim">Sim
+                    </label>
+                </div>
+                <div class="não">
+                    <label>
+                        <input type="radio" name="cardiaco1" value="não">Não
+                    </label>
+                </div>
+                <br>
+                <label>Sente falta de ar ou cansaço após esforço ou repouso?</label>
+                <label>
+                    <input type="radio" name="cardiaco2" value="sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="cardiaco2" value="não">Não
+                </label>
+                <br>
+                <label>Dorme com muitos travesseiros ou sente falta do ar quando se deita?</label>
+                <label>
+                    <input type="radio" name="cardiaco3" value="sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="cardiaco3" value="não">Não
+                </label>
+                <br>
+                <label>Sente dor no peito em repouso ou mesmo em repouso?</label>
+                <label>
+                    <input type="radio" name="cardiaco4" value="sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="cardiaco4" value="não">Não
+                </label>
+                <br>
+                <label>Tem inchaços nas pernas ou nos pés qie pioram durante o dia?</label>
+                <label>
+                    <input type="radio" name="cardiaco5" value="sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="cardiaco5" value="não">Não
+                </label>
+            </div>
+        </fieldset>
+        <button type="button" id="botao">Enviar</button>
+            
+            <script>
+             // Adicione um evento de clique ao botão
+             document.getElementById("botao").addEventListener("click", function() {
+             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
+                window.location.href = "respiratorio.html";
+                });
+            </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ficha.css" media="screen">
+    <title>Ficha</title>
+</head>
+<body>
+    <div>
+        <h1 class="principal">Ficha do Paciente</h1>
+        <p class="principal">Coloque as informações que se pedem corretamente</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset>
+            <div>
+                <label>1. Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Idade:</label>
+                <input type="number" name="idade" id="idade">
+            </div>
+            
+
+            <div>
+                <label>E-mail:</label>
+                <input type="E-mail" name="E-mail" id="E-mail">
+
+                <label>Número de Telefone:</label>
+                <input type="number" name="Telefone" id="Telefone">
+            </div>
+            
+
+            <div>
+                <label>Qual seu Genero?:</label>
+                <label>
+                    <input type="radio" name="genero" value="Masculino">Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="Feminino">Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="Indefinido">Indefinido
+                </label>
+            </div>
+
+            <div>
+                <label>RG:</label>
+                <input type="number" name="RG" id="RG">
+
+                <label>CPF:</label>
+                <input type="number" name="CPF" id="CPF">
+            </div>
+
+            <div>
+                <label>Profissão</label>
+                <input type="text" name="profissão" id="profissão">
+
+                <label>Cidade</label>
+                <input type="text" name="Cidade" id="Cidade">
+
+                <label>Endereço</label>
+                <input type="text" name="endereço" id="endereço">
+            </div>
+
+            <div>
+                <label>Estado civil</label>
+                <input type="text" name="EstadoCivil" id="EstadoCivil">
+            </div>
+        </fieldset>
+        <button type="button" id="botao">Enviar</button>
+            
+            <script>
+             // Adicione um evento de clique ao botão
+             document.getElementById("botao").addEventListener("click", function() {
+             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
+                window.location.href = "sintomas.html";
+                });
+            </script>
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/formulario.css" media="screen">
+    <title>Ficha</title>
+</head>
+<body>
+    <h2>Exame Físico Intrabucal</h2>
+
+        <fieldset>
+            <h3>Periodonto de proteção (gengiva)</h3><h3>Cor:</h3>
+            <label>
+                <div class="cor">
+                    <input type="radio" name="Intrabucal" value="Rósea">Rósea
+                </div>
+            </label>
+            <label>
+                <div class="cor">
+                    <input type="radio" name="Intrabucal" value="Ópaca">Ópaca
+                </div>
+            </label>
+            <label>
+                <div class="cor">
+                    <input type="radio" name="Intrabucal" value="Avermelhada">Avermelhada
+                </div>
+            </label>
+            <label>
+                <div class="cor">
+                    <input type="radio" name="Intrabucal" value="Arroxeada">Arroxeada
+                </div>
+            </label>
+            <label>
+                <div class="cor">
+                    <input type="radio" name="Intrabucal" value="Brilhante">Brilhante
+                </div>
+            </label>
+            <label>Observações:
+                <div class="resposta">
+                    <input type="text" name="Intrabucal" id="Intrabucal">
+                </div>
+            </label>
+            <br>
+            <h3>Textura</h3>
+            <label>
+                <div class="Textura">
+                    <input type="radio" name="Intrabucal" value="Pontilhada">Pontilhada (casca de laranja)
+                </div>
+                <div class="Textura">
+                    <input type="radio" name="Intrabucal" value="Lisa">Lisa
+                </div>
+                <div class="Textura">
+                    <input type="radio" name="Intrabucal" value="Ulcerada">Ulcerada
+                </div>
+            </label>
+            <label>Observações:
+                <div class="resposta">
+                    <input type="text" name="Intrabucal" id="Intrabucal">
+                </div>
+            </label>
+            <label>Forma:
+                <div class="resposta">
+                    <input type="text" name="Intrabucal" id="Intrabucal">
+                </div>
+            </label>
+            <label>Margem gengival:
+                <div class="irregular">
+                    <input type="radio" name="Intrabucal" value="irregular">Contorno irregular
+                </div>
+                <div class="regular">
+                    <input type="radio" name="Intrabucal" value="regular">Regular
+                </div>
+            </label>
+            <label>
+                <div class="Piramidal">
+                    <input type="radio" name="Intrabucal" value="Piramidal">Piramidal
+                </div>
+                <div class="Inversão">
+                    <input type="radio" name="Intrabucal" value="Inversão">Inversão
+                </div>
+                <div class="COL">
+                    <input type="radio" name="Intrabucal" value="COL">COL
+                </div>
+            </label>
+            <label>
+                <div class="Presente">
+                    <input type="radio" name="Intrabucal" value="Presente">Presente
+                </div>
+                <div class="Ausente">
+                    <input type="radio" name="Intrabucal" value="Ausente">Ausente
+                </div>
+            </label>
+            <label>
+                <div class="resposta">
+                    <input type="text" name="Intrabucal" id="Intrabucal">
+                </div>
+                
+            </label>
+        </fieldset>
+        <button type="button" id="botao">Enviar</button>
+            
+            <script>
+             // Adicione um evento de clique ao botão
+             document.getElementById("botao").addEventListener("click", function() {
+             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
+                window.location.href = "fixa.html";
+                });
+            </script>
+</body>
+</html>
