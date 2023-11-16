@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/formulario.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="extra.css" media="screen">
     <title>Ficha</title>
 </head>
 <body>
-    <h2>Exame Físico Extrabucal</h2>
+   
 
         <fieldset>
-            <div class="Extrabucal">
+            <div class="container">
+                <h2>Exame Físico Extrabucal</h2>
                 <label>Assimerias:
                     <div class="resposta">
-                        <input type="text" name="Extrabucal" id="Extrabucal">
+                        <input type="text" name="ExtrabucalAssimerias" id="ExtrabucalAssimerias">
                     </div>
                     Região:
                     <div class="resposta">
-                        <input type="text" name="Extrabucal" id="Extrabucal">
+                        <input type="text" name="ExtrabucalRegiao" id="ExtrabucalRegiao">
                     </div>
                 </label>
+                
                 <label>
-                    <input type="checkbox" name="Extrabucal" id="Extrabucal">Características de normalidade<br>
-                    <input type="checkbox" name="Extrabucal" id="Extrabucal">Características inflamatórias(doloroso, móvel e liso)<br>
-                    <input type="checkbox" name="Extrabucal" id="Extrabucal">Características neoplásticas (ausência de sensibilidade dolorosa, fixo e irregular)
+                    <input type="checkbox" name="ExtrabucalNormalidade" id="ExtrabucalNormalidade">Características de normalidade<br>
+                    <input type="checkbox" name="ExtrabucalInflamatorias" id="ExtrabucalInflamatorias">Características inflamatórias (doloroso, móvel e liso)<br>
+                    <input type="checkbox" name="ExtrabucalNeoplásticas" id="ExtrabucalNeoplásticas">Características neoplásticas (ausência de sensibilidade dolorosa, fixo e irregular)
                 </label>
+                
                 <label>Região/localização
                     <div class="resposta">
-                        <input type="text" name="Extrabucal" id="Extrabucal">
+                        <input type="text" name="ExtrabucalRegiaoLocalizacao" id="ExtrabucalRegiaoLocalizacao">
                     </div>
                 </label>
-            </div>
-        </fieldset>
-
+          
         <h2>Exame de ATM</h2>
 
         <fieldset>
@@ -40,63 +41,60 @@
                 <h3>Palpação:</h3>
                 <label>Direita:
                     <div class="Assintomático">
-                        <input type="radio" name="ATM" value="Assintomático">Assintomático
+                        <input type="radio" name="ATMPalpacaoDireita" value="Assintomático">Assintomático
                     </div>
                     <div class="Sintomático">
-                        <input type="radio" name="ATM" value="Sintomático">Sintomático
+                        <input type="radio" name="ATMPalpacaoDireita" value="Sintomático">Sintomático
                     </div>
                 </label>
                 <label>Esquerda:
                     <div class="Assintomático">
-                        <input type="radio" name="ATM" value="Assintomático">Assintomático
+                        <input type="radio" name="ATMPalpacaoEsquerda" value="Assintomático">Assintomático
                     </div>
                     <div class="Sintomático">
-                        <input type="radio" name="ATM" value="Sintomático">Sintomático
+                        <input type="radio" name="ATMPalpacaoEsquerda" value="Sintomático">Sintomático
                     </div>
                 </label>
                 <h3>Ausculta:</h3>
                 <label>Direita:
                     <div class="estalo">
-                        <input type="radio" name="ATM" value="Estalo">Estalo
+                        <input type="radio" name="ATMAuscultaDireita" value="Estalo">Estalo
                     </div>
                     <div class="Crepitação">
-                        <input type="radio" name="ATM" value="Crepitação">Crepitação
+                        <input type="radio" name="ATMAuscultaDireita" value="Crepitação">Crepitação
                     </div>
                 </label>
                 <label>Esquerda:
                     <div class="estalo">
-                        <input type="radio" name="ATM" value="Estalo">Estalo
+                        <input type="radio" name="ATMAuscultaEsquerda" value="Estalo">Estalo
                     </div>
                     <div class="Crepitação">
-                        <input type="radio" name="ATM" value="Crepitação">Crepitação
+                        <input type="radio" name="ATMAuscultaEsquerda" value="Crepitação">Crepitação
                     </div>
                 </label>
                 <h3>Grau de mobilidade:</h3>
                 <label>
                     <div class="normal">
-                        <input type="radio" name="ATM" value="Normal">normal
+                        <input type="radio" name="ATMMobilidade" value="Normal">Normal
                     </div>
                     <div class="Alterado">
-                        <input type="radio" name="ATM" value="Alterado">Alterado
+                        <input type="radio" name="ATMMobilidade" value="Alterado">Alterado
                     </div>
                 </label>
                 <h3>Desvio:</h3>
                 <label>
                     <div class="Direita">
-                        <input type="radio" name="ATM" value="Direita">Direita
+                        <input type="radio" name="ATMDesvio" value="Direita">Direita
                     </div>
-                    <div class=" Esquerda">
-                        <input type="radio" name="ATM" value="Esquerda">Esquerda
+                    <div class="Esquerda">
+                        <input type="radio" name="ATMDesvio" value="Esquerda">Esquerda
                     </div>
                 </label>
                 <label>Observações:
                     <div class="resposta">
-                        <input type="text" name="ATM" id="ATM">
+                        <input type="text" name="ATMObservacoes" id="ATMObservacoes">
                     </div>
-                </label>
-            </div>
-        </fieldset>
-        <button type="button" id="botao">Enviar</button>
+                    <button type="button" id="botao">Enviar</button>
             
             <script>
              // Adicione um evento de clique ao botão
@@ -105,5 +103,13 @@
                 window.location.href = "intrabucal.html";
                 });
             </script>
+            
+            <button type="button" id="botao">Enviar</button>
+                </label>
+            </div>
+        </fieldset>
+        
+            
+           
 </body>
 </html>

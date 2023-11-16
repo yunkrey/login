@@ -1,40 +1,39 @@
 // Seleciona todos os elementos com a classe '.item-menu'
-var menuitem = document.querySelectorAll('.item-menu');
+var menuItems = document.querySelectorAll('.item-menu');
 
-function selectlink() {
+function selectLink() {
     // Remove a classe 'ativo' de todos os elementos com a classe '.item-menu'
-    menuitem.forEach((item) => {
+    menuItems.forEach((item) => {
         item.classList.remove('ativo');
         // Verifica se o elemento .icon i existe antes de tentar removê-lo
         var icon = item.querySelector('.icon i');
         if (icon) {
-            icon.classList.remove('ativo');
+            icon.classList.remove('ativo-icon');
         }
     });
 
     // Adiciona a classe 'ativo' ao item de menu clicado
     this.classList.add('ativo');
-    
-    // Adiciona a classe 'ativo' ao ícone do item de menu clicado, se existir
+
+    // Adiciona a classe 'ativo-icon' ao ícone do item de menu clicado, se existir
     var clickedIcon = this.querySelector('.icon i');
     if (clickedIcon) {
-        clickedIcon.classList.add('ativo');
+        clickedIcon.classList.add('ativo-icon');
     }
 }
 
 // Adiciona o evento de clique para cada item de menu
-menuitem.forEach((item) => {
-    item.addEventListener('click', selectlink);
+menuItems.forEach((item) => {
+    item.addEventListener('click', selectLink);
 });
 
 // Seleciona o botão de expansão do menu
-var btnexp = document.querySelector('#btn-exp');
+var btnExpandir = document.querySelector('#btn-exp');
 // Seleciona o menu lateral
-var menuside = document.querySelector('.menu-lateral');
+var menuLateral = document.querySelector('.menu-lateral');
 
 // Adiciona o evento de clique para o botão de expansão do menu
-btnexp.addEventListener('click', function () {
-   // Alterna a classe 'expandir' no menu lateral (para expandir/retrair)
-   menuside.classList.toggle('expandir');
-   var header = document.querySelector("header");
+btnExpandir.addEventListener('click', function () {
+    // Alterna a classe 'expandir' no menu lateral (para expandir/retrair)
+    menuLateral.classList.toggle('expandir');
 });

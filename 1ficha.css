@@ -29,7 +29,7 @@ body {
 /* Estilo para o título principal */
 h1 {
   font-size: 28px;
-  color: #ef894a; /* Cor do título */
+  color: white; /* Cor do título */
   margin-bottom: 20px;
   text-align: center; /* Centraliza o texto. */
 }
@@ -44,7 +44,7 @@ label {
   display: block; /* Faz com que os rótulos apareçam em uma nova linha. */
   margin-bottom: 5px;
   font-weight: bold; /* Deixa o texto do rótulo em negrito. */
-  color: #ef894a; /* Cor do texto do rótulo. */
+  color: white; /* Cor do texto do rótulo. */
 }
 
 input[type="text"],

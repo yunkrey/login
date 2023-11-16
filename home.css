@@ -11,21 +11,28 @@
 
 body {
     height: 100vh;
+    margin: 0; /* Removido a margem para garantir que o corpo ocupe toda a tela */
 }
 
 /* Estilos para o menu lateral */
 nav.menu-lateral {
     width: 60px;
+    min-width: 60px; /* Defina uma largura mínima para evitar que o menu desapareça completamente */
     height: 100%;
     background-color: #437b58;
-    padding: 40px 0 40px 0%;
+    padding: 80px 0;
     box-shadow: 3px 0 0 #00ff88;
     position: fixed;
-    top: 7.45vh;
+    top: 0;
     left: 0;
     overflow: hidden;
     transition: .5s;
     float: left;
+}
+
+/* Estilos quando o menu lateral está expandido */
+nav.menu-lateral.expandir {
+    width: 15%;
 }
 
 /* Estilos quando o menu lateral está expandido */
@@ -98,7 +105,7 @@ ul li.item-menu a .icon > i {
 header {
     width: calc(103.20% - 60px);
     float: left;
-    padding: 15px;
+    padding: 5px;
     background-color: #2f5d43;
     border-bottom: 2px solid #00ff88;
     color: white;

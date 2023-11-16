@@ -3,40 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/formulario.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="osteo.css" media="screen">
     <title>Ficha</title>
 </head>
 <body>
-    <h2 class="title">Sistema Osteoarticular</h2>
+    
 
-        <fieldset>
-            <div class="Osteoarticular">
-                <label>Tem dores nas articulações?
-                    <div class="sim">
-                        <input type="radio" name="Osteoarticular" value="Sim">Sim
-                    </div>
-                    <div class="não">
-                        <input type="radio" name="Osteoarticular" value="Não">Não
+    <fieldset>
+        <div class="container">
+            <h2 class="title">Sistema Osteoarticular</h2>
+            
+            <label>Tem dores nas articulações?
+                <div class="sim">
+                    <input type="radio" name="OsteoarticularDores" value="Sim">Sim
+                </div>
+                <div class="não">
+                    <input type="radio" name="OsteoarticularDores" value="Não">Não
+                </div>
+            </label>
+            
+            <label>Tem ou teve febre reumática?
+                <div class="sim">
+                    <input type="radio" name="OsteoarticularFebreReumatica" value="Sim">Sim
+                </div>
+                <div class="não">
+                    <input type="radio" name="OsteoarticularFebreReumatica" value="Não">Não
+                </div>
+            </label>
+    
+            
+
+        
+                <h2 class="title">História Clínica</h2>
+                <label>Queixa principal:
+                    <div class="resposta">
+                        <input type="text" name="História" id="História">
                     </div>
                 </label>
-                <label>tem ou teve febre reumatica?
-                    <div class="sim">
-                        <input type="radio" name="Osteoarticular" value="Sim">Sim
-                    </div>
-                    <div class="não">
-                        <input type="radio" name="Osteoarticular" value="Não">Não
+                <label>Histórico de doença atual:
+                    <div class="resposta">
+                        <input type="text" name="História" id="História">
                     </div>
                 </label>
-            </div>
-        </fieldset>
-        <button type="button" id="botao">Enviar</button>
+                <label>História progressa:
+                    <div class="resposta">
+                        <input type="text" name="História" id="História">
+                    </div>
+                </label>
+                <label>Histórico familiar:
+                    <div class="resposta">
+                        <input type="text" name="História" id="História">
+                    </div>
+                </label>
+                
+                <button type="button" id="botao">Enviar</button>
             
             <script>
              // Adicione um evento de clique ao botão
              document.getElementById("botao").addEventListener("click", function() {
              // Redirecione o usuário para a "ficha.html" quando o botão for clicado
-                window.location.href = "historia.html";
+                window.location.href = "queixas.html";
                 });
+                
             </script>
+            <a href="javascript:history.back()">Voltar</a>
+            </div>
+            
+        </fieldset>
+        
 </body>
 </html>
