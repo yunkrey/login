@@ -1,5 +1,5 @@
-  /* Resetar margens e preenchimento padrão para todos os elementos */
-  * {
+/* Resetar margens e preenchimento padrão para todos os elementos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,31 +17,26 @@ body {
 }
 
 /* Estilo do contêiner principal */
-.cardiaco {
+.container {
     background: #2f5d43; /* Cor de fundo da caixa de informações */
     padding: 26px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra à caixa de informações */
     max-width: 600px;
     width: 100%;
-    margin: -10x;
+    margin: 20px auto; /* Ajusta a margem para centralizar o container */
 }
-h2 , h3{
+
+/* Estilo para o título principal */
+h1, h2, h3 {
     text-align: center;
     font-size: 28px;
     margin: 10px;
     color: #ef894a;
 }
-/* Estilo para o título principal */
-h1 {
-    font-size: 28px;
-    color: #ef894a;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
 /* Estilo das seções do formulário */
-.input-group {
+.Respiratório, .Hematológico {
     margin-bottom: 20px;
 }
 
@@ -51,6 +46,11 @@ label {
     margin-bottom: 10px;
     font-weight: bold;
     color: white;
+}
+
+input[type="text"],
+input[type="radio"] {
+    margin-top: 5px;
 }
 
 input[type="text"],
@@ -78,9 +78,10 @@ button {
     cursor: pointer;
     font-size: 18px;
     display: inline-block; /* Adiciona botão ao fluxo normal do conteúdo */
-    margin-top: 20px; /* Adiciona margem acima do botão */
-    margin-right: 1vw; /* Adiciona margem à direita do botão */
+    margin-top: 10px; /* Adiciona margem acima do botão */
+    margin-right: 2vh; /* Adiciona margem à direita do botão */
 }
+
 a {
     background-color: #ef894a; /* Cor de fundo do botão. */
     color: #fff; /* Cor do texto do botão. */
@@ -90,9 +91,8 @@ a {
     cursor: pointer;
     font-size: 18px;
     display: inline-block; /* Adiciona botão ao fluxo normal do conteúdo */
-    margin-top: 25px; /* Adiciona margem acima do botão */
+    margin-top: 10px; /* Adiciona margem acima do botão */
     margin-right: -10vw; /* Adiciona margem à direita do botão */
-    margin-top: 46px;
 }
 
 /* Estilo para mensagens de sucesso (pode ser personalizado ainda mais) */
@@ -105,6 +105,17 @@ a {
     margin-top: 10px;
 }
 
+/* Estilo para mensagens de erro (pode ser personalizado ainda mais) */
+.error {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Reset de estilos para o fieldset */
 fieldset {
     border: none;
     padding: 0;

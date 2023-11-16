@@ -3,74 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/formulario.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="nerv.css" media="screen">
     <title>Ficha</title>
 </head>
 <body>
-    <h2 class="title">Sistema Nervoso</h2>
 
-        <fieldset>
-            <div class="Nervoso">
-                <label>Já teve convulsões?
-                    <div class="sim">
-                        <input type="radio" name="Nervoso" value="Sim">Sim
-                    </div>
-                    <div class="não">
-                        <input type="radio" name="Nervoso" value="Não">Não
-                    </div>
-                </label>
-                <label>Jáfez tratamento para os nervos?
-                    <div class="sim">
-                        <input type="radio" name="Nervoso" value="Sim">Sim
-                    </div>
-                    <div class="não">
-                        <input type="radio" name="Nervoso" value="Não">Não
-                    </div>
-                </label>
-                <label>Toma medicamento para os nervos?
-                    <div class="sim">
-                        <input type="radio" name="Nervoso" value="Sim">Sim
-                    </div>
-                    <div class="não">
-                        <input type="radio" name="Nervoso" value="Não">Não
-                    </div>
-                </label>
-            </div>
-        </fieldset>
 
-        <br>
-    <h2>Sistema Imunológico</h2>
     <fieldset>
+       
+        <div class="container">
+            <h2 class="title">Sistema Nervoso</h2>
+            <label>Já teve convulsões?
+                <div class="resposta">
+                    <input type="radio" name="Convulsoes" value="Sim">Sim
+                    <input type="radio" name="Convulsoes" value="Não">Não
+                </div>
+            </label>
+            <label>Já fez tratamento para os nervos?
+                <div class="resposta">
+                    <input type="radio" name="TratamentoNervos" value="Sim">Sim
+                    <input type="radio" name="TratamentoNervos" value="Não">Não
+                </div>
+            </label>
+            <label>Toma medicamento para os nervos?
+                <div class="resposta">
+                    <input type="radio" name="MedicamentoNervos" value="Sim">Sim
+                    <input type="radio" name="MedicamentoNervos" value="Não">Não
+                </div>
+            </label>
+        
+    
+        
+        <h2>Sistema Imunológico</h2>
         <label>Tem alguma alergia?
-            <div class="sim">
-                <input type="radio" name="Imunológico" value="sim">Sim
-            </div>
-            <div class="não">
-                <input type="radio" name="Imunológico" value="não">Não
+            <div class="resposta">
+                <input type="radio" name="Alergia" value="Sim">Sim
+                <input type="radio" name="Alergia" value="Não">Não
             </div>
         </label>
-        <label>Tem alergia a algum rémedio?
+        <label>Tem alergia a algum remédio?
             <div class="resposta">
-                <input type="text" name="Imunológico" id="Imunológico">
+                <input type="text" name="AlergiaRemedio" id="AlergiaRemedio">
             </div>
         </label>
         <label>Tem ou teve algum problema ao receber anestesia no dentista?
-            <div class="sim">
-                <input type="radio" name="Imunológico" value="sim">Sim
-            </div>
-            <div class="não">
-                <input type="radio" name="Imunológico" value="não">Não
+            <div class="resposta">
+                <input type="radio" name="ProblemaAnestesia" value="Sim">Sim
+                <input type="radio" name="ProblemaAnestesia" value="Não">Não
             </div>
         </label>
-    </fieldset>
-    <button type="button" id="botao">Enviar</button>
+        <button type="button" id="botao">Enviar</button>
             
-    <script>
-    // Adicione um evento de clique ao botão
-    document.getElementById("botao").addEventListener("click", function() {
-    // Redirecione o usuário para a "ficha.html" quando o botão for clicado
-    window.location.href = "genitourinário.html";
-    });
-    </script>
+        <script>
+            // Adicione um evento de clique ao botão
+            document.getElementById("botao").addEventListener("click", function() {
+                // Redirecione o usuário para a "genitourinario.html" quando o botão for clicado
+                window.location.href = "genitourinário.html";
+            });
+        </script>
+        
+        <a href="javascript:history.back()">Voltar</a>
+    </fieldset>
+    
+   
 </body>
 </html>

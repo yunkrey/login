@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/formulario.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="respiratorio.css" media="screen">
     <title>Ficha</title>
 </head>
 <body>
-    <h2 class="title">Sistema Respiratório:</h2>
+    <div class="container">
+        <h2 class="title">Sistema Respiratório:</h2>
 
         <fieldset>
             <div class="Respiratório">
-                <label>Tosse muito?
+                <label>
+                    Tosse muito?
                     <div class="sim">
-                        <input type="radio" name="Respiratório" value="sim">Sim
+                        <input type="radio" name="Tosse" id="tosseSim" value="sim">Sim
                     </div>
                     <div class="não">
-                        <input type="radio" name="Respiratório" value="não">Não
+                        <input type="radio" name="Tosse" id="tosseNao" value="não">Não
                     </div>
                 </label>
-            
-                <label>Fuma?
+
+                <label>
+                    Fuma?
                     <div class="sim">
-                        <input type="radio" name="Respiratório" value="sim">Sim
+                        <input type="radio" name="Fuma" id="fumaSim" value="sim">Sim
                     </div>
                     <div class="não">
-                        <input type="radio" name="Respiratório" value="não">Não
+                        <input type="radio" name="Fuma" id="fumaNao" value="não">Não
                     </div>
                     <br>
-                    Se sim, há quanto tempo?<br><input type="text" name="Respiratório" id="Respiratório">
+                    Se sim, há quanto tempo?<br>
+                    <input type="text" name="TempoFumante" id="TempoFumante">
                 </label>
-            
-                <label>Tem asma?
+
+                <label>
+                    Tem asma?
                     <div class="sim">
-                        <input type="radio" name="Respiratório" value="Sim">Sim
+                        <input type="radio" name="Asma" id="asmaSim" value="sim">Sim
                     </div>
                     <div class="não">
-                        <input type="radio" name="Respiratório" value="Não">Não
+                        <input type="radio" name="Asma" id="asmaNao" value="não">Não
                     </div>
                 </label>
             </div>
@@ -46,40 +51,46 @@
 
         <fieldset>
             <div class="Hematológico">
-                <label>Sangra muito quando se corta?
+                <label>
+                    Sangra muito quando se corta?
                     <div class="sim">
-                        <input type="radio" name="Hematológico" value="Sim">Sim
+                        <input type="radio" name="Sangramento" id="sangramentoSim" value="sim">Sim
                     </div>
                     <div class="não">
-                        <input type="radio" name="Hematológico" value="Não">Não
+                        <input type="radio" name="Sangramento" id="sangramentoNao" value="não">Não
                     </div>
                 </label>
-                <label>Tem com frequencia algum tipo de hemorragia?
+                <label>
+                    Tem frequentemente algum tipo de hemorragia?
                     <div class="sim">
-                        <input type="radio" name="Hematológico" value="Sim">Sim
+                        <input type="radio" name="Hemorragia" id="hemorragiaSim" value="sim">Sim
                     </div>
                     <div class="não">
-                        <input type="radio" name="Hematológico" value="Não">Não
+                        <input type="radio" name="Hemorragia" id="hemorragiaNao" value="não">Não
                     </div>
                 </label>
-                <label>Possui anemia?
+                <label>
+                    Possui anemia?
                     <div class="sim">
-                        <input type="radio" name="Hematológico" value="Sim">Sim
+                        <input type="radio" name="Anemia" id="anemiaSim" value="sim">Sim
                     </div>
                     <div class="não">
-                        <input type="radio" name="Hematológico" value="Não">Não
+                        <input type="radio" name="Anemia" id="anemiaNao" value="não">Não
                     </div>
                 </label>
             </div>
         </fieldset>
+
         <button type="button" id="botao">Enviar</button>
-            
-            <script>
-             // Adicione um evento de clique ao botão
-             document.getElementById("botao").addEventListener("click", function() {
-             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
-                window.location.href = "endocrino.html";
-                });
-            </script>
+        <a href="javascript:history.back()" class="back-button">Voltar</a>
+    </div>
+
+    <script>
+        // Adicione um evento de clique ao botão
+        document.getElementById("botao").addEventListener("click", function() {
+            // Redirecione o usuário para a "endocrino.html" quando o botão for clicado
+            window.location.href = "endocrino.html";
+        });
+    </script>
 </body>
 </html>
