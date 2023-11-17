@@ -3,11 +3,11 @@ html{
 
     --body-color:#FFFCFF ;
   
-    --header-color:#d36c6c;
+    --header-color:#ef894a;
   
     --header-button:#ef894a;
   
-    --color-weekdays: #2f5d43;
+    --color-weekdays: white;
     
     --box-shadow: #CBD4C2;
   
@@ -31,7 +31,7 @@ html{
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    background-color: var(--body-color);
+    background-color:  #437b58;
   }
   button {
     width: 75px;
@@ -59,12 +59,12 @@ html{
     width: 770px;
   }
   #weekdays {
-    width: 100%;
+    width: 120%;
     display: flex;
     color: var(--color-weekdays) ;
   }
   #weekdays div {
-    width: 100px;
+    width: 112px;
     padding: 10px;
   }
   #calendar {

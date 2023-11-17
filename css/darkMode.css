@@ -14,6 +14,7 @@ input[type=checkbox]{
     border-radius: 100px;
     position: relative;
     left: -50px;
+    top: 25px;
   }
   
   label::after{
