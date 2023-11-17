@@ -7,110 +7,122 @@
     <title>Ficha</title>
 </head>
 <body>
-    <h2>Exame Físico Intrabucal</h2>
 
-        <fieldset>
-            <h3>Periodonto de proteção (gengiva)</h3><h3>Cor:</h3>
+    <fieldset>
+        <h2>Exame Físico Intrabucal</h2>
+
+        <h3>Periodonto de proteção (gengiva)</h3>
+        <h3>Cor:</h3>
+        <div class="cor">
             <label>
-                <div class="container">
-                    <input type="radio" name="Intrabucal" value="Rósea">Rósea
-                </div>
+                <input type="radio" name="intrabucal" value="Rósea">Rósea
             </label>
+        </div>
+
+        <div class="cor">
             <label>
-             
-                    <input type="radio" name="Intrabucal" value="Ópaca">Ópaca
-                </div>
+                <input type="radio" name="intrabucal" value="Ópaca">Ópaca
             </label>
+        </div>
+
+        <div class="cor">
             <label>
-                
-                    <input type="radio" name="Intrabucal" value="Avermelhada">Avermelhada
-                </div>
+                <input type="radio" name="intrabucal" value="Avermelhada">Avermelhada
             </label>
+        </div>
+
+        <div class="cor">
             <label>
-              
-                    <input type="radio" name="Intrabucal" value="Arroxeada">Arroxeada
-                </div>
+                <input type="radio" name="intrabucal" value="Arroxeada">Arroxeada
             </label>
+        </div>
+
+        <div class="cor">
             <label>
-                
-                    <input type="radio" name="Intrabucal" value="Brilhante">Brilhante
-                </div>
+                <input type="radio" name="intrabucal" value="Brilhante">Brilhante
             </label>
-            <label>Observações:
-                <div class="resposta">
-                    <input type="text" name="Intrabucal" id="Intrabucal">
-                </div>
+        </div>
+
+        <div class="observacao">
+            <label>Observação
+                <input type="text" name="intrabucalObservacao">
             </label>
-            <br>
-            <h3>Textura</h3>
+        </div>
+
+        <h2>Textura:</h2>
+        <div class="textura">
             <label>
-                <div class="Textura">
-                    <input type="radio" name="Intrabucal" value="Pontilhada">Pontilhada (casca de laranja)
-                </div>
-                <div class="Textura">
-                    <input type="radio" name="Intrabucal" value="Lisa">Lisa
-                </div>
-                <div class="Textura">
-                    <input type="radio" name="Intrabucal" value="Ulcerada">Ulcerada
-                </div>
+                <input type="radio" name="textura" value="Pontilhada">Pontilhada
             </label>
-            <label>Observações:
-                <div class="resposta">
-                    <input type="text" name="Intrabucal" id="Intrabucal">
-                </div>
-            </label>
-            <label>Forma:
-                <div class="resposta">
-                    <input type="text" name="Intrabucal" id="Intrabucal">
-                </div>
-            </label>
-            <label>Margem gengival:
-                <div class="irregular">
-                    <input type="radio" name="Intrabucal" value="irregular">Contorno irregular
-                </div>
-                <div class="regular">
-                    <input type="radio" name="Intrabucal" value="regular">Regular
-                </div>
-            </label>
+        </div>
+        <div class="textura">
             <label>
-                <div class="Piramidal">
-                    <input type="radio" name="Intrabucal" value="Piramidal">Piramidal
-                </div>
-                <div class="Inversão">
-                    <input type="radio" name="Intrabucal" value="Inversão">Inversão
-                </div>
-                <div class="COL">
-                    <input type="radio" name="Intrabucal" value="COL">COL
-                </div>
+                <input type="radio" name="textura" value="Lisa">Lisa
             </label>
+        </div>
+        <div class="textura">
             <label>
-                <div class="Presente">
-                    <input type="radio" name="Intrabucal" value="Presente">Presente
-                </div>
-                <div class="Ausente">
-                    <input type="radio" name="Intrabucal" value="Ausente">Ausente
-                </div>
+                <input type="radio" name="textura" value="Ulcerada">Ulcerada
             </label>
-            <label>
-                <div class="resposta">
-                    <input type="text" name="Intrabucal" id="Intrabucal">
-                </div>
-                <button type="button" id="botao">Enviar</button>
-            
-            <script>
-             // Adicione um evento de clique ao botão
-             document.getElementById("botao").addEventListener("click", function() {
-             // Redirecione o usuário para a "ficha.html" quando o botão for clicado
-                window.location.href = "html/ficha.html";
-                });
-            </script>
-            
-            <button type="button" id="botao">Enviar</button>
-                
-            </label>
-        </fieldset>
-       
-            
-           
+        </div>
+
+        <label>Observações:
+            <div class="resposta">
+                <input type="text" name="Intrabucal" id="Intrabucal">
+            </div>
+        </label>
+
+        <label>Forma:
+            <div>
+                <input type="text" name="Intrabucal" id="Intrabucal">
+            </div>
+        </label>
+
+        <label>Margem gengival:
+            <div>
+                <input type="radio" name="Margem" value="irregular">Contorno irregular
+            </div>
+            <div>
+                <input type="radio" name="Margem" value="regular">Regular
+            </div>
+        </label>
+
+        <label>Papila interdental:
+            <div>
+                <input type="radio" name="Inversão" value="Piramidal">Piramidal
+            </div>
+            <div class="Inversão">
+                <input type="radio" name="Inversão" value="Inversão">Inversão
+            </div>
+            <div class="COL">
+                <input type="radio" name="Inversão" value="COL">COL
+            </div>
+        </label>
+
+        <label>Faixa de gengiva inserida:
+            <div>
+                <input type="radio" name="Presente" value="Presente">Presente
+            </div>
+            <div>
+                <input type="radio" name="Presente" value="Ausente">Ausente
+            </div>
+        </label>
+
+        <label>
+            <div>
+                <input type="text" name="Intrabucal" id="Intrabucal">
+            </div>
+        </label>
+
+        <button type="button" id="botao">Enviar</button>
+        <a href="javascript:history.back()">Voltar</a>
+
+        <script>
+            document.getElementById("botao").addEventListener("click", function() {
+                window.location.href = "fixa.html";
+            });
+        </script>
+    </fieldset>
+
 </body>
 </html>

@@ -118,4 +118,13 @@ fieldset {
     border: none;
     padding: 0;
     margin: 0;
+  background-color: #2f5d43;
+  background: #2f5d43; /* Cor de fundo da caixa de informações */
+  padding: 26px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra à caixa de informações */
+  max-width: 600px;
+  width: 50vh;
+  margin: 20px auto; /* Ajusta a margem para centralizar o container */
 }
+
