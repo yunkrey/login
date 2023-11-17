@@ -5,9 +5,9 @@ html{
   
     --header-color:#d36c6c;
   
-    --header-button:#92a1d1;
+    --header-button:#ef894a;
   
-    --color-weekdays: #247BA0;
+    --color-weekdays: #2f5d43;
     
     --box-shadow: #CBD4C2;
   
@@ -15,7 +15,7 @@ html{
   
     --current-day:#e8f4fa;
   
-    --event-color: #58bae4;
+    --event-color: #2f5d43;
   
     --modal-event: #e8f4fa;
   
@@ -47,7 +47,7 @@ html{
   #header {
     padding: 10px;
     color: var(--header-color) ;
-    font-size: 26px;
+    font-size: 46px;
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
